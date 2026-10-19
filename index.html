@@ -70,7 +70,16 @@ body {
 .tag { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px; background: var(--sky); color: var(--navy); font-size: 12px; font-weight: 700; vertical-align: 3px; }
 
 .actions { display: grid; gap: 10px; }
-.actions.me { border-top: 1px solid #E3E6EB; padding-top: 16px; }
+.me-link {
+  margin-left: auto; flex: none;
+  display: inline-flex; align-items: center; gap: 4px;
+  min-height: 40px; padding: 6px 14px; border-radius: 999px;
+  border: 1.5px solid var(--navy); color: var(--navy);
+  font-size: 14px; font-weight: 700; text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.me-link:hover { background: var(--navy); color: #fff; }
+.me-link:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .btn {
   display: flex; justify-content: space-between; align-items: center; gap: 12px;
   min-height: 52px; padding: 12px 20px; border-radius: 999px;
@@ -105,6 +114,7 @@ body {
         <div class="who">
           <div class="photo" data-initial="A"><img src="andre.jpg" alt="Andre 的照片"></div>
           <div class="name"><h2>Andre</h2><span>PM 組水手</span></div>
+          <a class="me-link" href="https://www.linkedin.com/in/ming-yuan-hung-8685b4210/" id="andre-link" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
         <div class="project">
           <h3>reMockable <span class="tag">曼陀號專案</span></h3>
@@ -120,15 +130,13 @@ body {
         <div class="actions">
           <a class="btn primary" href="https://story-sprint-frontend.magic9701.workers.dev/" id="andre-prototype-2" target="_blank" rel="noopener">試玩 Story Sprint <span class="arrow">→</span></a>
         </div>
-        <div class="actions me">
-          <a class="btn" href="https://www.linkedin.com/in/ming-yuan-hung-8685b4210/" id="andre-link" target="_blank" rel="noopener">認識 Andre <span class="arrow">↗</span></a>
-        </div>
       </article>
 
       <article class="card">
         <div class="who">
           <div class="photo" data-initial="W"><img src="webber.jpg" alt="Webber 的照片"></div>
           <div class="name"><h2>Webber</h2><span>PM 組水手</span></div>
+          <a class="me-link" href="https://portaly.cc/tsuwebber" id="webber-link" target="_blank" rel="noopener">個人頁 <span aria-hidden="true">↗</span></a>
         </div>
         <div class="project">
           <h3>EchoTrail <span class="tag">曼陀號專案</span></h3>
@@ -143,9 +151,6 @@ body {
         </div>
         <div class="actions">
           <a class="btn primary" href="https://lifeos-phi-one.vercel.app/" id="webber-prototype-2" target="_blank" rel="noopener">試玩 LifeOS <span class="arrow">→</span></a>
-        </div>
-        <div class="actions me">
-          <a class="btn" href="https://portaly.cc/tsuwebber" id="webber-link" target="_blank" rel="noopener">認識 Webber <span class="arrow">↗</span></a>
         </div>
       </article>
     </div>
