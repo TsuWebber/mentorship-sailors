@@ -95,6 +95,16 @@ body {
 
 .sign { margin: 28px 0 0; text-align: center; font-family: var(--serif); color: var(--sand); font-size: 15px; }
 
+/* 桌機：兩張卡片並排，手機維持單欄 */
+@media (min-width: 760px) {
+  .inner { max-width: 920px; }
+  .hero { padding-block: 56px 72px; }
+  .hero h1 { font-size: 40px; }
+  .hero .en { font-size: 22px; }
+  .crew { grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+  .band { padding-block: 64px 72px; }
+}
+
 .todo { background: var(--todo-bg); border: 1px dashed var(--todo-line); border-radius: 4px; padding: 0 .3em; font-style: normal; color: var(--ink); }
 </style>
 </head>
