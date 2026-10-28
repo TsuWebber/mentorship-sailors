@@ -103,9 +103,6 @@ body {
 .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .btn .arrow { font-family: var(--serif); font-size: 18px; }
 
-.friends { margin-top: 40px; display: grid; gap: 6px; }
-.friends-kicker { margin: 0; text-align: center; color: var(--sand); font-weight: 700; letter-spacing: .12em; font-size: 14px; }
-.friends h2 { margin: 0 0 14px; text-align: center; font-family: var(--serif); font-weight: 600; font-size: 28px; color: #fff; }
 .sign { margin: 28px 0 0; text-align: center; font-family: var(--serif); color: var(--sand); font-size: 15px; }
 
 /* 桌機：兩張卡片並排，手機維持單欄 */
@@ -116,7 +113,6 @@ body {
   .hero .en { font-size: 22px; }
   .crew { grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
   .band { padding-block: 64px 72px; }
-  .friends .card { max-width: 448px; width: 100%; justify-self: center; }
 }
 
 .todo { background: var(--todo-bg); border: 1px dashed var(--todo-line); border-radius: 4px; padding: 0 .3em; font-style: normal; color: var(--ink); }
@@ -171,6 +167,13 @@ body {
           <a class="btn primary" href="https://echotrail-dev-508500-k6.web.app/" id="webber-prototype" target="_blank" rel="noopener">試玩 EchoTrail <span class="arrow">→</span></a>
         </div>
         <div class="project">
+          <h3>ResumeMatch <span class="tag">同題目夥伴作品</span></h3>
+          <p>幫助對職涯迷惘的人，透過 AI 歸納過往經歷找出方向線索，再用投遞數據追蹤來驗證求職方向。</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://resumematch.techorse.cc/" id="resumematch" target="_blank" rel="noopener">試玩 ResumeMatch <span class="arrow">→</span></a>
+        </div>
+        <div class="project">
           <h3>LifeOS <span class="tag personal">個人專案</span></h3>
           <p>人生儀表板：不只工作，連起你的過去、現在與未來。</p>
         </div>
@@ -180,19 +183,6 @@ body {
       </article>
     </div>
 
-    <section class="friends" aria-labelledby="friends-title">
-      <p class="friends-kicker">同題目的另一組</p>
-      <h2 id="friends-title">Fellow Crew</h2>
-      <article class="card">
-        <div class="project">
-          <h3>ResumeMatch <span class="tag">曼陀號專案</span></h3>
-          <p>幫助對職涯迷惘的人，透過 AI 歸納過往經歷找出方向線索，再用投遞數據追蹤來驗證求職方向。</p>
-        </div>
-        <div class="actions">
-          <a class="btn primary" href="https://resumematch.techorse.cc/" id="resumematch" target="_blank" rel="noopener">試玩 ResumeMatch <span class="arrow">→</span></a>
-        </div>
-      </article>
-    </section>
     <p class="sign">Your journey continues.</p>
   </div>
 </main>
